@@ -154,11 +154,4 @@ const addVideoStream = (videoEl, stream) => {
         videoEl.play();
     });
     videoGrid.append(videoEl)
-    let totalUsers = document.getElementsByTagName("video").length;
-    if (totalUsers > 1) {
-        for (let index = 0; index < totalUsers; index++) {
-            document.getElementsByTagName("video")[index].style.width =
-                100 / totalUsers + "%";
-        }
-    }
 };
